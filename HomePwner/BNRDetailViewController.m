@@ -68,6 +68,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setItem:(BNRItem *)item {
+    _item = item;
+    self.navigationItem.title = _item.itemName;
+}
+
 /*
 #pragma mark - Navigation
 
